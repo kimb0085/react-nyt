@@ -1,6 +1,6 @@
-import React {Component} from "react";
-import "../css/App.css";
+import React, { Component } from "react";
 import Header from "./Header";
+import "../css/App.css";
 import Search from "./Search";
 import ArticleList from "./ArticleList";
 

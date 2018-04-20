@@ -1,4 +1,4 @@
-import React {Component} from "react";
+import React, { Component } from "react";
 import ArticleNav from "./ArticleNav";
 import Article from "./Article";
 
@@ -14,7 +14,9 @@ class ArticleList extends Component{
 			if (title.indexOf(searchTerm) === -1){
 				return;
 			}
-			rows.push(<Article key={article.title} article={article} /><div></div>);
+			rows.push(<div>
+				<Article key={article.title} article={article} />
+				</div>);
 		});
 		return rows;
 	}

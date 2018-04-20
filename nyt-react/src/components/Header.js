@@ -1,27 +1,12 @@
-import React {Component} from "react";
-import {Navbar, Nav, NavItem} from "react-bootstrap";
+import React, { Component } from "react";
 
-class Header extends Component{
-	 render() {
-    // Using bootstrap-react for navbar
-    
-    return (
-    <Navbar inverse collapseOnSelect>
-      <Navbar.Header>
-        <Navbar.Brand>
-          <a href="">NYT Scraper</a>
-        </Navbar.Brand>
-        <Navbar.Toggle />
-      </Navbar.Header>
-      <Navbar.Collapse>
-        <Nav>
-          <NavItem eventKey={1} href="">Scrape</NavItem>
-        </Nav>
-      </Navbar.Collapse>
+const Header = () => (
+    <header className="header">
+      <h1>New York Times Article Scrubber</h1>
+      <h2>Search for and save articles</h2>
       <div></div>
-    </Navbar>
-  );
-  }
-}
+    </header>
+);
+
 
 export default Header;
